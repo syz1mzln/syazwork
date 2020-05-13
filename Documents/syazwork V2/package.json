@@ -1,5 +1,5 @@
 {
-  "name": "syazwork-v2",
+  "name": "syazwork",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syz1mzln/syazwork-V2.git"
+    "url": "git+https://github.com/syz1mzln/syazwork.git"
   },
   "author": "SM",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/syz1mzln/syazwork-V2/issues"
+    "url": "https://github.com/syz1mzln/syazwork/issues"
   },
-  "homepage": "https://github.com/syz1mzln/syazwork-V2#readme"
+  "homepage": "https://github.com/syz1mzln/syazwork#readme"
 }
