@@ -1,0 +1,36 @@
+$optred: #d44333;
+$reddot: #f05b51;
+$optyellow: #ffc043;
+$swissyellow: #fde020;
+$swissblue: #0f4c81;
+$optgreen: #3aa76d;
+
+//Black shades
+$colfont: #333;
+$coolblack: #001630;
+$richblack: #020202;
+$lessblack: #181818;
+
+.reddot,
+.reddot-logo {
+  color: $reddot;
+}
+
+.second {
+  background-color: #000;
+  color: #fff;
+}
+
+.number {
+  color: rgba(165, 162, 162, 0.5);
+}
+
+.fourth {
+  background-color: #fab722;
+  color: $richblack;
+}
+
+.fifth {
+  background-color: #656568;
+  color: $richblack;
+}

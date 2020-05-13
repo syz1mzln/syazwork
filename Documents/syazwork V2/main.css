@@ -1,0 +1,900 @@
+@charset "UTF-8";
+@import url(" https://fonts.googleapis.com/css?family=Oswald:700|Rubik:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900|Work+Sans:200,300,400,700&display=swap");
+.reddot,
+.reddot-logo {
+  color: #f05b51;
+}
+
+.second {
+  background-color: #000;
+  color: #fff;
+}
+
+.number {
+  color: rgba(165, 162, 162, 0.5);
+}
+
+.fourth {
+  background-color: #fab722;
+  color: #020202;
+}
+
+.fifth {
+  background-color: #656568;
+  color: #020202;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  color: richblack;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 9rem;
+  line-height: 144px;
+  /* or 87% */
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 59px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+}
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%;
+  }
+  .two.columns {
+    width: 13.3333333333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.6666666667%;
+  }
+  .five.columns {
+    width: 39.3333333333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+  .eight.columns {
+    width: 65.3333333333%;
+  }
+  .nine.columns {
+    width: 74%;
+  }
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+  .eleven.columns {
+    width: 91.3333333333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%;
+  }
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+  }
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%;
+  }
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%;
+  }
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78%;
+  }
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%;
+  }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%;
+  }
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%;
+  }
+}
+
+/* Links
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1eaedb;
+}
+
+a:hover {
+  color: #0fa0ce;
+}
+
+/* Buttons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+/* Forms
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33c3f0;
+  outline: 0;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
+
+/* Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* Tables
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/* Spacing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+/* Utilities
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+/* Misc
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* Clearing
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+  Note: The best way to structure the use of media queries is to create the queries
+  near the relevant code. For example, if you wanted to change the styles for buttons
+  on small devices, paste the mobile query code up in the buttons section and style it
+  there.
+  */
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/* GLOBAL SETTINGS
+   ============================= */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.number {
+  font-size: 5rem;
+  line-height: 0.5;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* HEADER
+   ============================= */
+header {
+  width: 100%;
+  background-color: "";
+  float: left;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.7;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.logo {
+  color: inherit;
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  float: left;
+  width: calc(200 / 1200 * 100%);
+  padding: calc(200 / 1200 * 10%);
+}
+
+.work {
+  font-weight: bolder;
+}
+
+.reddot-logo {
+  font-size: 5rem;
+  line-height: 0;
+}
+
+/* SECTION-HOME
+   ============================= */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+/* SECTION-SECOND
+   ============================= */
+.second,
+.third,
+.fourth,
+.fifth {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  overflow: hidden;
+}
+
+.second-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3.5em 0;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  left: 60em;
+}
+
+.second-text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  z-index: 1;
+}
+
+.second-title {
+  width: 66.25em;
+}
+
+.second-title::after {
+  content: "";
+  border: 1px solid #a5a2a2;
+  width: 200px;
+  position: absolute;
+  top: 12em;
+}
+
+.second-brief,
+.second-desc {
+  width: 504px;
+  color: #a5a2a2;
+  margin-top: 45px;
+}
+
+/* SECTION-THIRD
+   ============================= */
+.third-img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  left: 70em;
+  top: 30em;
+}
+
+/* SECTION-FOURTH
+   ============================= */
+.fourth-title {
+  width: 66.25em;
+}
+
+.fourth-title::after {
+  content: "";
+  border: 1px solid #020202;
+  width: 200px;
+  position: absolute;
+  top: 12em;
+}
+
+.fourth-img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  right: 0;
+  top: 0;
+}
+
+.fourth-brief,
+.fourth-desc {
+  width: 504px;
+  color: #020202;
+  margin-top: 45px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .second-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 10px;
+  }
+  .second-title::after {
+    content: "";
+    display: none;
+  }
+  .fourth-title {
+    width: 300px;
+  }
+  .fourth-title::after {
+    content: "";
+    display: none;
+  }
+  .fourth-img {
+    display: none;
+  }
+  .fourth-brief,
+  .fourth-desc {
+    width: 300px;
+  }
+}
+
+/* SECTION-FIFTH
+   ============================= */
+.fifth-img {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: absolute;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  left: 45em;
+  top: 10em;
+}
+
+.contact {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  position: absolute;
+  left: 70em;
+  top: 35em;
+}
+
+.img-left,
+.img-center,
+.img-right {
+  margin-right: 1em;
+}
+
+.fifth-desc {
+  width: 504px;
+  color: #a5a2a2;
+  margin-top: 45px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contact {
+    left: 2.5em;
+    top: 26em;
+  }
+  .img-left,
+  .img-center,
+  .img-right {
+    width: 40px;
+    height: 40px;
+  }
+  .fifth-desc {
+    width: 260px;
+    color: #a5a2a2;
+    margin-top: 18px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  h1 {
+    font-size: 8rem;
+    line-height: 87%;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .third-img {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    left: 60em;
+    top: 20em;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 87%;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    opacity: 0.5;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 87%;
+  }
+  .number {
+    font-size: 3rem;
+    line-height: 87%;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  a.logo {
+    font-size: 1.5em;
+  }
+  .second-title {
+    width: 10em;
+  }
+  .second-title::after {
+    content: "";
+    border: 0.5px solid #a5a2a2;
+    width: 100px;
+  }
+  .second-brief,
+  .second-desc {
+    width: 280px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
