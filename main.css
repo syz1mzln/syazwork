@@ -786,7 +786,7 @@ a.logo {
       -ms-flex-order: 4;
           order: 4;
   position: absolute;
-  left: 70em;
+  left: 73em;
   top: 35em;
 }
 
@@ -796,28 +796,25 @@ a.logo {
   margin-right: 1em;
 }
 
+.img-left:hover,
+.img-left:focus {
+  background-color: #1f77b5;
+}
+
+.img-center:hover,
+.img-center:focus {
+  background-color: #24292e;
+}
+
+.img-right:hover,
+.img-right:focus {
+  background-color: #d72400;
+}
+
 .fifth-desc {
   width: 504px;
   color: #a5a2a2;
   margin-top: 45px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .contact {
-    left: 2.5em;
-    top: 26em;
-  }
-  .img-left,
-  .img-center,
-  .img-right {
-    width: 40px;
-    height: 40px;
-  }
-  .fifth-desc {
-    width: 300px;
-    color: #a5a2a2;
-    margin-top: 18px;
-  }
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
@@ -838,6 +835,12 @@ a.logo {
     height: auto;
     left: 60em;
     top: 20em;
+  }
+  .fifth-img {
+    left: 30em;
+  }
+  .contact {
+    left: 57em;
   }
 }
 
@@ -898,6 +901,21 @@ a.logo {
   .second-brief,
   .second-desc {
     width: 280px;
+  }
+  .contact {
+    left: 2.5em;
+    top: 26em;
+  }
+  .img-left,
+  .img-center,
+  .img-right {
+    width: 40px;
+    height: 40px;
+  }
+  .fifth-desc {
+    width: 300px;
+    color: #a5a2a2;
+    margin-top: 18px;
   }
 }
 /*# sourceMappingURL=main.css.map */
